@@ -16,8 +16,12 @@ This repository has one main file, main.py, and two helper files.
 
 ```
 usage: python3 main.py [-h] -e input_edges
-positional arguments:
+positional argument:
   input_edges  Two edges (list points) and a precision parameter for rounding the float numbers.
+
+  The format of input_edges: (list of edges, that each edge is a tuple of start and end points)
+    1) A variable name of edges defined in the script (edges_window_1, edges_window_2, edges_window_3, edges_window_d_1, edges_window_d_3, edges_window_d_3, and edges_test).
+    2) A list of edges in the format: "[(x1,y1),(x2,y2)],[(x3,y3),(x4,y4)], ..." 
 
 Returns:
   1) List of all new sub-edges
@@ -26,5 +30,6 @@ Returns:
   4) List of perimeters of all unique sub-cycles
   5) Product of all perimeters (float number)
 ```
+
 
 
