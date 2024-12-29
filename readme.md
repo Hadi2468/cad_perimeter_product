@@ -12,7 +12,7 @@ This repository has one main file, main.py, and two helper files.
 
 
 
-**- model.py**: Compute perimeter product for entered line segments
+** * model.py**: Compute perimeter product for entered line segments
 
 ```
 usage: python3 main.py [-h] -e input_edges
