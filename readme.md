@@ -20,7 +20,8 @@ positional argument:
   input_edges  Two edges (list points) and a precision parameter for rounding the float numbers.
 
   The format of input_edges: (list of edges, that each edge is a tuple of start and end points)
-    1) A variable name of edges defined in the script (edges_window_1, edges_window_2, edges_window_3, edges_window_d_1, edges_window_d_3, edges_window_d_3, and edges_test).
+    1) A variable name of edges defined in the script:
+       (edges_window_1, edges_window_2, edges_window_3, edges_window_d_1, edges_window_d_3, edges_window_d_3, and edges_test).
     2) A list of edges in the format: "[(x1,y1),(x2,y2)],[(x3,y3),(x4,y4)], ..." 
 
 Returns:
