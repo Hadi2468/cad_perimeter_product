@@ -7,12 +7,12 @@ I want to calculate the multiplicative product of
 all perimeters of all the individual enclosed areas. To solve this problem, I used graph theory and considered each line segment as the edge of the graph, and all points as nodes of the graph. Then,
 using graph modeling, find all unique sub-loops, then calculate their perimeters. 
 
-# Repository organization
+## Repository organization
 This repository has one main file, main.py, and two helper files.
 
 
 
-**>>>  main.py**: Compute perimeter product for entered line segments
+** - main.py**: Compute perimeter product for entered line segments
 
 ```
 python3 main.py [-h] -e input_edges
@@ -38,7 +38,7 @@ Returns:
 ![Screenshot 2024-12-29 12 23 58 AM](https://github.com/user-attachments/assets/e351f2ba-344a-40ae-97bb-802d6275b3d8)
 
 
-**>>>  make_graph.py**: Compute perimeter product for entered line segments
+**-  make_graph.py**: Compute perimeter product for entered line segments
 
 Using 'edge-intersect()' function all available intersections between two input edges are found. Then using 'create_graph()' function, and Networkx library, all edges and new nodes (with considering new intersections) considered to creat a graph G. This algorithm is repeated until the 'last_intersection' parameter, which is considered as a flag for the last available intersections, trigged.
 
@@ -54,7 +54,7 @@ Returns:
   4) Final flag of 'last_intersection' parameter
 
 
-**>>>  perimeter_cycles.py**: Compute perimeter product for entered line segments
+**-perimeter_cycles.py**: Compute perimeter product for entered line segments
 
 ```
 positional argument:
