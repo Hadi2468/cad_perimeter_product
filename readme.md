@@ -60,7 +60,7 @@ Returns:
 
 \
 \
-**-   perimeter_cycles.py**
+**-   perimeter_cycles.py**\
 Find all unique sub-cycles that have no overlap (80%) with other big cycles using 'find_unique_cycles()' and 'approximate_subset()' functions. Then calculate the perimeter of each cycle, the product of all perimeters, and round with the precision of 6 for float numbers using 'calculate_perimeters()' function.
 
 Input parameters:
