@@ -12,7 +12,7 @@ This repository has one main file, main.py, and two helper files.
 
 
 
-**-  main.py**
+**---  main.py**\
 Compute perimeter product for entered line segments
 
 ```
@@ -22,11 +22,11 @@ python3 main.py [-h] -e input_edges
 Positional argument:
 - input_edges:  Two edges (list points) and a precision parameter for rounding the float numbers.
      The format of input_edges: (list of edges, that each edge is a tuple of start and end points)
-     1) A variable name of edges defined in the script:
-        (edges_window_1, edges_window_2, edges_window_3,
-        edges_window_d_1, edges_window_d_2, edges_window_d_3,
-        edges_test).
-     2) A list of edges in the format: "[(x1,y1),(x2,y2)],[(x3,y3),(x4,y4)], ..." 
+   1. A variable name of edges defined in the script:
+         (edges_window_1, edges_window_2, edges_window_3,
+          edges_window_d_1, edges_window_d_2, edges_window_d_3,
+          edges_test).
+   2. A list of edges in the format: "[(x1,y1),(x2,y2)],[(x3,y3),(x4,y4)], ..." 
 
 Returns:
   1) List of all new sub-edges
@@ -37,10 +37,10 @@ Returns:
 
 
 ![Screenshot 2024-12-29 12 23 58 AM](https://github.com/user-attachments/assets/e351f2ba-344a-40ae-97bb-802d6275b3d8)
-
-
-
-**-   make_graph.py**
+\
+\
+\
+**---   make_graph.py**\
 Compute perimeter product for entered line segments
 
 Using 'edge-intersect()' function all available intersections between two input edges are found. Then using 'create_graph()' function, and Networkx library, all edges and new nodes (with considering new intersections) considered to creat a graph G. This algorithm is repeated until the 'last_intersection' parameter, which is considered as a flag for the last available intersections, trigged.
@@ -55,10 +55,10 @@ Returns:
   2) List: list of coordination of any available sub-edges
   3) List: list of coordination of any available intersection points
   4) Final flag of 'last_intersection' parameter
-
-
-
-**-   perimeter_cycles.py**
+\
+\
+\
+**---   perimeter_cycles.py**
 Find all unique sub-cycles that have no overlap (80%) with other big cycles using 'find_unique_cycles()' and 'approximate_subset()' functions. Then calculate the perimeter of each cycle, the product of all perimeters, and round with the precision of 6 for float numbers using 'calculate_perimeters()' function.
 
 Input parameters:
