@@ -11,7 +11,6 @@ using graph modeling, find all unique sub-loops, then calculate their perimeters
 This repository has one main file, main.py, and two helper files.
 \
 \
-\
 **-  main.py**\
 Compute perimeter product for entered line segments
 
@@ -24,10 +23,11 @@ Positional argument:
   Two edges (list points) and a precision parameter for rounding the float numbers.\
   The format of input_edges: (list of edges, that each edge is a tuple of start and end points)
    - A variable name of edges defined in the script:\
-         (edges_window_1, edges_window_2, edges_window_3,\
-          edges_window_d_1, edges_window_d_2, edges_window_d_3,\
-          edges_test).
-   - A list of edges in the format: "[(x1,y1),(x2,y2)],[(x3,y3),(x4,y4)], ..." 
+       (edges_window_1, edges_window_2, edges_window_3,\
+        edges_window_d_1, edges_window_d_2, edges_window_d_3,\
+        edges_test)
+   - A list of edges in the format:\
+        "[(x1, y1), (x2, y2)], [(x3, y3), (x4, y4)], ..." 
 
 Returns:
   1) List of all new sub-edges
@@ -35,6 +35,7 @@ Returns:
   3) List of all unique sub-cycles
   4) List of perimeters of all unique sub-cycles
   5) Product of all perimeters (float number)
+
 \
 \
 ![Screenshot 2024-12-29 12 23 58 AM](https://github.com/user-attachments/assets/e351f2ba-344a-40ae-97bb-802d6275b3d8)
@@ -57,7 +58,6 @@ Returns:
   3) List: list of coordination of any available intersection points
   4) Final flag of 'last_intersection' parameter
 
-\
 \
 \
 **-   perimeter_cycles.py**
