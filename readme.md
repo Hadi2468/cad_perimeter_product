@@ -43,9 +43,7 @@ Returns:
 \
 \
 **-   make_graph.py**\
-Compute perimeter product for entered line segments
-
-Using 'edge-intersect()' function all available intersections between two input edges are found. Then using 'create_graph()' function, and Networkx library, all edges and new nodes (with considering new intersections) considered to creat a graph G. This algorithm is repeated until the 'last_intersection' parameter, which is considered as a flag for the last available intersections, trigged.
+Creat a graph of nodes and edges. Using 'edge-intersect()' function all available intersections between two input edges are found. Then using 'create_graph()' function, and Networkx library, all edges and new nodes (with considering new intersections) considered to creat a graph G. This algorithm is repeated until the 'last_intersection' parameter, which is considered as a flag for the last available intersections, trigged.
 
 Input parameters:
   1) Two edges (list points)
@@ -61,7 +59,7 @@ Returns:
 \
 \
 **-   perimeter_cycles.py**\
-Find all unique sub-cycles that have no overlap (80%) with other big cycles using 'find_unique_cycles()' and 'approximate_subset()' functions. Then calculate the perimeter of each cycle, the product of all perimeters, and round with the precision of 6 for float numbers using 'calculate_perimeters()' function.
+Compute perimeter product for entered line segments. Find all unique sub-cycles that have no overlap (80%) with other big cycles using 'find_unique_cycles()' and 'approximate_subset()' functions. Then calculate the perimeter of each cycle, the product of all perimeters, and round with the precision of 6 for float numbers using 'calculate_perimeters()' function.
 
 Input parameters:
   1) The graph of G: graph of cycles, nodes, and edges
