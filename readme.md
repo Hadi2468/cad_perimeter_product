@@ -12,14 +12,15 @@ This repository has one main file, main.py, and two helper files.
 
 
 
-** - main.py**: Compute perimeter product for entered line segments
+**-  main.py**
+Compute perimeter product for entered line segments
 
 ```
 python3 main.py [-h] -e input_edges
 ```
 
 Positional argument:
- * input_edges:  Two edges (list points) and a precision parameter for rounding the float numbers.
+- input_edges:  Two edges (list points) and a precision parameter for rounding the float numbers.
      The format of input_edges: (list of edges, that each edge is a tuple of start and end points)
      1) A variable name of edges defined in the script:
         (edges_window_1, edges_window_2, edges_window_3,
@@ -38,7 +39,9 @@ Returns:
 ![Screenshot 2024-12-29 12 23 58 AM](https://github.com/user-attachments/assets/e351f2ba-344a-40ae-97bb-802d6275b3d8)
 
 
-**-  make_graph.py**: Compute perimeter product for entered line segments
+
+**-   make_graph.py**
+Compute perimeter product for entered line segments
 
 Using 'edge-intersect()' function all available intersections between two input edges are found. Then using 'create_graph()' function, and Networkx library, all edges and new nodes (with considering new intersections) considered to creat a graph G. This algorithm is repeated until the 'last_intersection' parameter, which is considered as a flag for the last available intersections, trigged.
 
@@ -54,23 +57,18 @@ Returns:
   4) Final flag of 'last_intersection' parameter
 
 
-**-perimeter_cycles.py**: Compute perimeter product for entered line segments
 
-```
-positional argument:
-  input_edges  Two edges (list points) and a precision parameter for rounding the float numbers.
+**-   perimeter_cycles.py**
+Find all unique sub-cycles that have no overlap (80%) with other big cycles using 'find_unique_cycles()' and 'approximate_subset()' functions. Then calculate the perimeter of each cycle, the product of all perimeters, and round with the precision of 6 for float numbers using 'calculate_perimeters()' function.
 
-  The format of input_edges: (list of edges, that each edge is a tuple of start and end points)
-    1) A variable name of edges defined in the script:
-       (edges_window_1, edges_window_2, edges_window_3,
-        edges_window_d_1, edges_window_d_2, edges_window_d_3,
-        edges_test).
-    2) A list of edges in the format: "[(x1,y1),(x2,y2)],[(x3,y3),(x4,y4)], ..." 
+Input parameters:
+  1) The graph of G: graph of cycles, nodes, and edges
+  2) A 'precision' parameter for rounding the float numbers
+  3) A 'threshold=0.8' parameter: the accepted subset proportion based on one or two new intersections that are uncommon in other original cycles
 
 Returns:
-  1) List of all new sub-edges
-  2) List of all available intersections (new nodes)
-  3) List of all unique sub-cycles
-  4) List of perimeters of all unique sub-cycles
-  5) Product of all perimeters (float number)
-```
+  1) List of unique cycles: list of cycles, where each cycle is a list of coordinates
+  2) List of perimeters
+  3) A product of perimeters (float number)
+
+
